@@ -18,15 +18,7 @@
       <div class="flex w-full items-center justify-between">
         <div class="nav-left mr-auto">
           <NuxtLink to="/" class="title-link">
-            <h1>
-              <img
-                src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg"
-                alt="Reshelf Logo"
-                width="150"
-                height="50"
-                class="responsive"
-              />
-            </h1>
+            <h1 class="text-3xl font-bold">東京理科大学野球部</h1>
           </NuxtLink>
         </div>
 
