@@ -1,15 +1,15 @@
 <template>
   <div class="body">
     <Nuxt />
-    <scroll-top/>
+    <scroll-top />
   </div>
 </template>
 <script>
 import ScrollTop from '~/components/atoms/ScrollTop'
 export default {
   components: {
-    ScrollTop
-  }
+    ScrollTop,
+  },
 }
 </script>
 <style lang="scss" scoped>

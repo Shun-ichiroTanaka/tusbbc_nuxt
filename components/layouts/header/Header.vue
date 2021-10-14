@@ -1,35 +1,66 @@
 <template>
   <nav class="nav lg:h-24 shadow-reverse">
-    <div class="hidden lg:flex relative mx-auto flex items-center py-3 h-full container px-4 md:px-0">
+    <div
+      class="
+        hidden
+        lg:flex
+        relative
+        mx-auto
+        flex
+        items-center
+        py-3
+        h-full
+        container
+        px-4
+        md:px-0
+      "
+    >
       <div class="flex w-full items-center justify-between">
         <div class="nav-left mr-auto">
           <NuxtLink to="/" class="title-link">
-            <h1><img src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg" alt="Reshelf Logo" width="150" height="50" class="responsive"></h1>
+            <h1>
+              <img
+                src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg"
+                alt="Reshelf Logo"
+                width="150"
+                height="50"
+                class="responsive"
+              />
+            </h1>
           </NuxtLink>
         </div>
 
         <div class="nav-right">
           <div class="flex items-center">
-            <a class="mr-8" href="#mission" v-scroll-to="{el:'#mission'}">サービスの仕組み</a>
-            <a class="mr-8" href="#qa" v-scroll-to="{el:'#qa'}">Q＆A</a>
-            <a class="mr-8" href="#message" v-scroll-to="{el:'#message'}">創業者のメッセージ</a>
-            <a class="register" href="https://forms.gle/vG8GgqDSUxjm5Pfy7" target="_blank" rel="noreferrer noopener">事前登録フォーム</a>
+            <a v-scroll-to="{ el: '#mission' }" class="mr-8" href="#mission">
+              サービスの仕組み
+            </a>
+            <a v-scroll-to="{ el: '#qa' }" class="mr-8" href="#qa">Q＆A</a>
+            <a v-scroll-to="{ el: '#message' }" class="mr-8" href="#message">
+              創業者のメッセージ
+            </a>
+            <a
+              class="register"
+              href="https://forms.gle/vG8GgqDSUxjm5Pfy7"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              事前登録フォーム
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <Spnav/>
+    <Spnav />
   </nav>
 </template>
 
 <script>
-import Logo from '~/components/Logo'
 import Spnav from '~/components/atoms/spnav'
 
 export default {
   components: {
-    Logo,
     Spnav,
   },
 }
@@ -53,7 +84,7 @@ ul {
   li {
     @apply mx-4;
     a {
-      transition: all .25s ease;
+      transition: all 0.25s ease;
       &:hover {
         transform: translateY(-5px);
       }
@@ -61,15 +92,14 @@ ul {
   }
 }
 
-
 .register {
   @apply inline-block rounded px-6 py-3 font-semibold;
   color: var(--fff);
-  transition: .2s all ease;
+  transition: 0.2s all ease;
   background: var(--primary);
-  box-shadow: 0 10px 20px -10px rgba($primary,.5);
+  box-shadow: 0 10px 20px -10px rgba($primary, 0.5);
   &:hover {
-    box-shadow: 0 20px 20px -10px rgba($primary,.5);
+    box-shadow: 0 20px 20px -10px rgba($primary, 0.5);
     transform: translateY(-5px);
   }
 }

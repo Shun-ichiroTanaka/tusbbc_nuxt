@@ -93,3 +93,10 @@ sw.*
 # firebase
 *.firebase
 .firebase
+
+.history/*
+.nuxt/*
+.eslintcache
+package-lock.json
+.vscode/settings.json
+package-lock.json

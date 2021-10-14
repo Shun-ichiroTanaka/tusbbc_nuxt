@@ -1,10 +1,30 @@
 <template>
   <nav class="nav lg:h-24 shadow-reverse">
-    <div class="hidden lg:flex relative mx-auto flex items-center py-3 h-full container px-4">
+    <div
+      class="
+        hidden
+        lg:flex
+        relative
+        mx-auto
+        flex
+        items-center
+        py-3
+        h-full
+        container
+        px-4
+      "
+    >
       <div class="flex w-full items-center justify-between">
         <div class="nav-left mr-auto">
           <NuxtLink to="/" class="title-link">
-            <h1><img src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg" alt="Reshelf Logo" width="100" height="61"></h1>
+            <h1>
+              <img
+                src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg"
+                alt="Reshelf Logo"
+                width="100"
+                height="61"
+              />
+            </h1>
           </NuxtLink>
         </div>
 
@@ -17,7 +37,7 @@
       </div>
     </div>
 
-    <RuleSpNav/>
+    <RuleSpNav />
   </nav>
 </template>
 
@@ -31,35 +51,34 @@ export default {
     RuleSpNav,
   },
   mounted() {
-    (() => {
-      'use strict';
+    ;(() => {
+      'use strict'
 
-      let refOffset = 0;
-      const bannerHeight = 77;
-      const bannerWrapper = document.querySelector('.sticky-box');
-      const banner = document.querySelector('.sticky-content');
+      let refOffset = 0
+      const bannerHeight = 77
+      const bannerWrapper = document.querySelector('.sticky-box')
+      const banner = document.querySelector('.sticky-content')
 
       const handler = () => {
-        const newOffset = window.scrollY || window.pageYOffset;
+        const newOffset = window.scrollY || window.pageYOffset
 
         if (newOffset > bannerHeight) {
           if (newOffset > refOffset) {
-            bannerWrapper.classList.remove('animateIn');
-            bannerWrapper.classList.add('animateOut');
+            bannerWrapper.classList.remove('animateIn')
+            bannerWrapper.classList.add('animateOut')
           } else {
-            bannerWrapper.classList.remove('animateOut');
-            bannerWrapper.classList.add('animateIn');
+            bannerWrapper.classList.remove('animateOut')
+            bannerWrapper.classList.add('animateIn')
           }
-          banner.style.background = 'var(--fff)';
-          refOffset = newOffset;
+          banner.style.background = 'var(--fff)'
+          refOffset = newOffset
         } else {
-          banner.style.backgroundColor = 'var(--fff)';
+          banner.style.backgroundColor = 'var(--fff)'
         }
-      };
+      }
 
-      window.addEventListener('scroll', handler, false);
-    })();
-
+      window.addEventListener('scroll', handler, false)
+    })()
   },
 }
 </script>
@@ -67,7 +86,7 @@ export default {
 .nav {
   // @apply ;
   @apply sticky top-0 left-0 right-0 z-30 transition-colors duration-300 ease-linear;
-  background: rgba(#fff, .8);
+  background: rgba(#fff, 0.8);
   // border-bottom: 1px solid var(--eee);
   &-right {
     @apply justify-end;
@@ -82,7 +101,7 @@ ul {
   li {
     @apply mx-4;
     a {
-      transition: all .25s ease;
+      transition: all 0.25s ease;
       &:hover {
         transform: translateY(-5px);
       }
@@ -90,22 +109,21 @@ ul {
   }
 }
 
-
 .sticky-box {
   @apply fixed w-full left-0;
   z-index: 4;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 .sticky-content {
   @apply w-full flex justify-around uppercase;
   background: var(--fcfcfc);
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
-.animateIn{
+.animateIn {
   transform: translateY(0px);
 }
 
-.animateOut{
+.animateOut {
   transform: translateY(-100%);
 }
 </style>
