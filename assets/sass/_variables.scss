@@ -1,7 +1,7 @@
 :root {
-  --primary: #33C4CC;
+  --primary: #16afaf;
   --color: #354247;
-
+  --bg: #fcfcfc;
   // --color: #616269;
   // --gold2: #b76e79;
   --color-secondary: #233A43;
@@ -32,7 +32,8 @@
 }
 
 .dark-mode {
-  --color: #ebf4f1;
+  --color: #ddd;
+  --bg: #242A38;
   --gold2: #C4A15A;
   --color-secondary: #fdf9f3;
   --fff: #292526;
@@ -59,7 +60,7 @@
 // $primary: #39324b;
 // $primary: #b76e79;
 // $primary: #C4A15A;
-$primary: #33C4CC;
+$primary: #16afaf;
 $color: #293C64;
 
 $color-primary: #AF7B52;

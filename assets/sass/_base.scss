@@ -1,14 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  // font-family: proxima-nova, 'Proxima Nova', 'Noto Sans Japanese', -apple-system,
+  //   system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
+  //   MyYuGothicM, YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo;
+  font-family: 'Montserrat', sans-serif, 'Noto Sans Japanese', -apple-system,
+    system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
+   MyYuGothicM, YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo !important;
+}
+
 body {
   @apply m-0 p-0 box-border antialiased;
-  font-family: proxima-nova, "Proxima Nova", "Noto Sans Japanese", -apple-system, system-ui, MyYuGothicM, YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   word-spacing: 1px;
   color: var(--color);
-  background-color: var(--fcfcfc);
+  background-color: var(--bg);
   background-attachment: fixed;
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
@@ -75,9 +85,9 @@ button {
 }
 
 
-.vs-tabs--btn {
-  @apply whitespace-no-wrap;
-}
+// .vs-tabs--btn {
+//   @apply whitespace-no-wrap;
+// }
 
 
 .text-primary {

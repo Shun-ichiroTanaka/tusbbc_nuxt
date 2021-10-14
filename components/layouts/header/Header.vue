@@ -33,11 +33,11 @@
         <div class="nav-right">
           <div class="flex items-center">
             <a v-scroll-to="{ el: '#mission' }" class="mr-8" href="#mission">
-              サービスの仕組み
+              MEMBER
             </a>
             <a v-scroll-to="{ el: '#qa' }" class="mr-8" href="#qa">Q＆A</a>
             <a v-scroll-to="{ el: '#message' }" class="mr-8" href="#message">
-              創業者のメッセージ
+              SCHEDULE
             </a>
             <a
               class="register"
@@ -45,7 +45,7 @@
               target="_blank"
               rel="noreferrer noopener"
             >
-              事前登録フォーム
+              CONTACT
             </a>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default {
 .nav {
   // @apply ;
   @apply sticky top-0 left-0 right-0 z-30 transition-colors duration-300 ease-linear;
-  background: var(--fcfcfc);
+  background: var(--bg);
   // border-bottom: 1px solid var(--eee);
   &-right {
     @apply justify-end;

@@ -61,6 +61,11 @@ export default {
 
   components: true,
 
+  styleResources: {
+    scss: [
+      '~/assets/sass/foundation/_variables.scss',
+    ],
+  },
   loading: {
     color: '#3173F7',
     height: '5px',

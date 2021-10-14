@@ -116,7 +116,7 @@ ul {
 }
 .sticky-content {
   @apply w-full flex justify-around uppercase;
-  background: var(--fcfcfc);
+  background: var(--bg);
   transition: all 0.25s ease;
 }
 .animateIn {

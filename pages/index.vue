@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .content {
   @apply m-0 p-0 mx-auto;
-  // background: var(--fcfcfc);
+  // background: var(--bg);
 }
 main {
   @apply w-full h-full;
