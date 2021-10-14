@@ -1,5 +1,5 @@
 {
-  "name": "tusbbc",
+  "name": "tus-bbc",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -33,7 +33,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "vue-feather-icons": "^5.1.0",
-    "vue-scrollto": "^2.20.0",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {}
 }
