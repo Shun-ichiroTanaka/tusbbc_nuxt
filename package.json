@@ -1,0 +1,25 @@
+{
+  "name": "Reshelf-lp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "core-js": "^3.8.3",
+    "fibers": "^5.0.0",
+    "nuxt": "^2.14.12",
+    "ress": "^3.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "vue-feather-icons": "^5.1.0",
+    "vue-scrollto": "^2.20.0",
+    "vuesax": "^3.12.2"
+  },
+  "devDependencies": {}
+}

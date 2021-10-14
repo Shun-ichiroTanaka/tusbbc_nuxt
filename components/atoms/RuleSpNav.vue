@@ -1,0 +1,170 @@
+<template>
+<div class="nav lg:hidden flex justify-between items-center p-4">
+
+  <NuxtLink to="/" class="title-link">
+    <h1><img src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg" alt="Reshelf Logo" width="70" height="40"></h1>
+  </NuxtLink>
+  <input class="nav__checkbox" id="drawerCheckbox" type="checkbox" >
+
+  <!-- ドロワーアイコン -->
+  <label class="flex relative" for="drawerCheckbox">
+    <menu-icon size="2x" class="relative"></menu-icon>
+  </label>
+
+  <!-- 背景を暗く -->
+  <label class="nav__overlay" for="drawerCheckbox"></label>
+
+  <!-- ドロワーメニュー -->
+  <nav class="nav__menu pt-8">
+    <div class="w-full flex flex-col mx-auto">
+      <ul class="flex flex-col justify-center lg:items-center">
+        <nuxt-link class="link" to="/">HOME</nuxt-link>
+        <nuxt-link class="link" to="/agree">事前登録規約</nuxt-link>
+        <nuxt-link class="link" to="/privacy">プライバシーポリシー</nuxt-link></nuxt-link>
+        <a class="register" href="https://forms.gle/vG8GgqDSUxjm5Pfy7" target="_blank" rel="noreferrer noopener">事前登録</a>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+</template>
+
+<script>
+import { MenuIcon,ChevronRightIcon,ChevronDownIcon,UserIcon } from 'vue-feather-icons'
+export default {
+  data () {
+    return {
+    }
+  },
+  components:{
+    MenuIcon,
+    ChevronRightIcon,
+    ChevronDownIcon,
+    UserIcon
+  },
+  methods: {
+  }
+}
+</script>
+<style lang="scss" scoped>
+.link {
+  @apply text-base my-2 mx-4;
+}
+.register {
+  @apply inline-block rounded-full px-4 py-2 my-2 mx-4 text-center;
+  color: #fff !important;
+  background: var(--primary);
+  // border-radius: 17px;
+  transition: all .25s ease;
+  box-shadow: 0 10px 20px -10px rgba($primary,.5);
+  &:hover {
+    box-shadow: 0 20px 20px -10px rgba($primary,.5);
+    transform: translateY(-5px);
+  }
+}
+// ドロワー
+.nav {
+  @apply fixed w-full h-full top-0 right-0;
+  .badge-drawer{
+     top: -10px;
+     right: -8px;
+     width: auto !important;
+  }
+  .select-plain{
+    display: inline-block;
+    padding-right: 1em;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    color: #626262;
+  }
+  position: relative;
+  // inputのcheckboxは非表示
+  &__checkbox{
+    display: none;
+  }
+
+  // ドロワーメニュー開いた時のメインエリアを暗く
+  &__overlay{
+    background: #000;
+    opacity: 0;
+    pointer-events: none; //ポインタの動作全部無効化
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  // ドロワーメニュー
+  &__menu{
+    background: #ffffff;
+    color: #000;
+    max-width: 100%;
+    width: 75%;
+    height: 100vh;
+    overflow-y: auto; //スクロール
+    -webkit-overflow-scrolling: touch; //スクロール（SP）
+    position: fixed;
+    top: 0;
+    right: -75%;
+  }
+  // z-indexの指定（1がメインエリア）
+  &__icon{
+    z-index: 4;
+  }
+  &__menu{
+    z-index: 3;
+  }
+  &__overlay{
+    z-index: 2;
+  }
+
+  // チェックが入ったら（アイコンクリックしたら）
+  &__checkbox:checked ~ {
+    // ハンバーガーアイコン
+    .nav__icon{
+      .nav__icon-parts{
+        background: transparent;
+      }
+      .nav__icon-parts:before{
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 0;
+      }
+      .nav__icon-parts:after{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+    // メインエリアを暗くする
+    .nav__overlay {
+      opacity: 0.3;
+      pointer-events: auto; //ポインタの動作デフォルトに戻す
+    }
+    // メニューをだす
+    .nav__menu {
+      right: 0;
+      z-index: 9999;
+    }
+  }
+  // 動きをスムーズに
+  &__icon-parts,
+  &__icon-parts:after,
+  &__icon-parts:before,
+  &__overlay,
+  &__menu{
+    -webkit-transition: all .25s ease ;
+    transition: all .25s ease ;
+  }
+}
+</style>
