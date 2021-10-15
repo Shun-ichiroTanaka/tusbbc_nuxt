@@ -18,7 +18,7 @@
       <div class="w-full flex flex-col mx-auto">
         <ul class="flex flex-col justify-center lg:items-center p-8">
           <li class="link">
-            <a v-scroll-to="{ el: '#member' }" href="#member"> MEMBERS </a>
+            <a v-scroll-to="{ el: '#member' }" href="#member">MEMBERS</a>
           </li>
           <li class="link">
             <a v-scroll-to="{ el: '#qa' }" href="#qa">Q＆A</a>
