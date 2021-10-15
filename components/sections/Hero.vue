@@ -15,7 +15,7 @@
       >
         <div class="hero-left lg:pr-16">
           <div class="">
-            <p class="hero-title text-left">WELCOME</p>
+            <p class="hero-title text-left">WELCOME.</p>
             <p class="hero-title-sub mt-2 md:mt-0">
               私たちは、東京理科大学神楽坂硬式野球部です。
               新東京大学野球３部リーグに所属する野球チームです。
@@ -25,7 +25,16 @@
       </div>
 
       <div
-        class="relative lg:w-2/3 flex items-center justify-center pl-4 lg:pl-0"
+        class="
+          relative
+          w-full
+          lg:w-2/3
+          flex
+          items-center
+          justify-center
+          pl-4
+          lg:pl-0
+        "
       >
         <carousel
           :per-page="1"
@@ -84,11 +93,13 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
+
 export default {
   components: {
     Carousel,
     Slide,
   },
+  mounted() {},
 }
 </script>
 <style lang="scss" scoped>
