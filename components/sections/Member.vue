@@ -1,8 +1,8 @@
 <template>
-  <section id="member" class="w-full flex flex-col items-center px-4 lg:px-0">
+  <section id="member" class="w-full flex flex-col items-center">
     <h2 class="w-full lg:mt-16 mb-4">MEMBERS</h2>
 
-    <div class="section-body">
+    <div class="section-body px-4 lg:px-0">
       <table class="styled-table">
         <thead>
           <tr class="hidden lg:table">

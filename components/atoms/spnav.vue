@@ -20,11 +20,13 @@
           <li class="link">
             <a v-scroll-to="{ el: '#member' }" href="#member">MEMBERS</a>
           </li>
-          <!-- <li class="link">
-            <a v-scroll-to="{ el: '#qa' }" href="#qa">Q＆A</a>
-          </li> -->
           <li class="link">
-            <a v-scroll-to="{ el: '#schedule' }" href="#schedule">SCHEDULE</a>
+            <a v-scroll-to="{ el: '#qa' }" href="#qa">Q＆A</a>
+          </li>
+          <li class="link">
+            <a v-scroll-to="{ el: '#message' }" href="#message">
+              創業者のメッセージ
+            </a>
           </li>
           <li class="register">
             <a
@@ -105,6 +107,8 @@ export default {
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   // ドロワーメニュー

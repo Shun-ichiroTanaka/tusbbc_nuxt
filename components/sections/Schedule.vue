@@ -1,6 +1,6 @@
 <template>
   <section id="schedule" class="w-full">
-    <h2 class="w-full lg:mt-16 mb-4">SCHEDULE</h2>
+    <h2 class="w-full mt-16 mb-4">SCHEDULE</h2>
 
     <div class="section-body">
       <iframe
