@@ -1,14 +1,7 @@
 <template>
   <div class="nav lg:hidden flex justify-between items-center p-4">
     <NuxtLink to="/" class="title-link">
-      <h1>
-        <img
-          src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg"
-          alt="Reshelf Logo"
-          width="70"
-          height="40"
-        />
-      </h1>
+      <h1 class="text-3xl font-bold">東京理科大学野球部</h1>
     </NuxtLink>
     <input id="drawerCheckbox" class="nav__checkbox" type="checkbox" />
 
