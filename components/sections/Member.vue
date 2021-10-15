@@ -1,0 +1,112 @@
+<template>
+  <section id="member" class="w-full flex flex-col items-center px-4 lg:px-0">
+    <h2 class="lg:mt-16 mb-4">MEMBERS</h2>
+
+    <div class="section-body">
+      <table class="styled-table">
+        <thead>
+          <tr class="hidden lg:table">
+            <th style="width: 116px">位置/役職</th>
+            <th style="width: 116px">氏名</th>
+            <th style="width: 261px">学部学科</th>
+            <th style="width: 59px">学年</th>
+            <th style="width: 59px">投打</th>
+            <th style="width: 59px">身長</th>
+            <th style="width: 59px">体重</th>
+            <th style="width: 175px">出身校</th>
+            <th style="width: 74px">背番号</th>
+          </tr>
+          <tr class="table lg:hidden">
+            <th class="w-1/5">位置/役職</th>
+            <th class="w-2/5">氏名</th>
+            <th>学年</th>
+            <th class="w-2/5">出身校</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="member in members" :key="member" class="hidden lg:table">
+            <td style="width: 116px">{{ member.position }}</td>
+            <td style="width: 116px">{{ member.name }}</td>
+            <td style="width: 261px">{{ member.faculty }}</td>
+            <td style="width: 59px">{{ member.grade }}</td>
+            <td style="width: 59px">{{ member.arm }}</td>
+            <td style="width: 59px">{{ member.height }}</td>
+            <td style="width: 59px">{{ member.weight }}</td>
+            <td style="width: 175px">{{ member.from }}</td>
+            <td style="width: 74px">{{ member.number }}</td>
+          </tr>
+          <tr v-for="member in members" :key="member" class="table lg:hidden">
+            <td class="w-1/5">{{ member.position }}</td>
+            <td class="w-2/5">{{ member.name }}</td>
+            <td>{{ member.grade }}</td>
+            <td class="w-2/5">{{ member.from }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</template>
+<script>
+import Member from '@/util/tusbbc_member.json'
+export default {
+  data() {
+    return {
+      members: Member,
+    }
+  },
+}
+</script>
+<style lang="scss" scoped>
+section {
+  @apply w-full mx-auto;
+}
+.section {
+  &-title {
+    width: 400px;
+  }
+  &-body {
+    @apply w-full flex justify-center mx-auto lg:py-4 container;
+    // color: var(--86868b);
+  }
+}
+h2 {
+  @apply text-3xl text-center inline-block;
+  color: var(--color);
+  // border-bottom: 5px solid var(--primary);
+
+  @screen lg {
+    @apply text-5xl mb-4;
+  }
+}
+
+.styled-table {
+  @apply rounded px-2 lg:px-0;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+  thead tr {
+    @apply w-full;
+    background-color: var(--primary);
+    // color: var(--86868b);
+    color: #ffffff;
+    text-align: left;
+  }
+  th,
+  td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+    &:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    &:last-of-type {
+      border-bottom: 2px solid var(--primary);
+    }
+    .active-row {
+      font-weight: bold;
+      color: var(--primary);
+    }
+  }
+}
+</style>

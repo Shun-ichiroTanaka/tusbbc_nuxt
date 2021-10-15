@@ -9,7 +9,7 @@
         <div class="main-content">
           <!-- <What/> -->
           <!-- <Howto/> -->
-          <Qa />
+          <Member />
           <!-- <Register/> -->
         </div>
       </main>
@@ -25,14 +25,14 @@ import Header from '~/components/layouts/header/Header'
 import Footer from '~/components/layouts/Footer'
 // sections
 import Hero from '~/components/sections/Hero'
-import Qa from '~/components/sections/Qa'
+import Member from '~/components/sections/Member'
 
 export default {
   components: {
     Header,
     Footer,
     Hero,
-    Qa,
+    Member,
   },
 }
 </script>

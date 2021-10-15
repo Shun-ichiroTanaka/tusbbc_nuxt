@@ -24,8 +24,8 @@
 
         <div class="nav-right">
           <div class="flex items-center">
-            <a v-scroll-to="{ el: '#mission' }" class="mr-8" href="#mission">
-              MEMBER
+            <a v-scroll-to="{ el: '#member' }" class="mr-8" href="#member">
+              MEMBERS
             </a>
             <a v-scroll-to="{ el: '#qa' }" class="mr-8" href="#qa">Q＆A</a>
             <a v-scroll-to="{ el: '#message' }" class="mr-8" href="#message">
@@ -33,7 +33,7 @@
             </a>
             <a
               class="register"
-              href="https://forms.gle/vG8GgqDSUxjm5Pfy7"
+              href="https://docs.google.com/forms/d/1FGurtbRLUHK4YMXOrRxOMiMDz8iLNsqBu1s-4vxiG9E/"
               target="_blank"
               rel="noreferrer noopener"
             >
