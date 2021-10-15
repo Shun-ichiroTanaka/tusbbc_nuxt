@@ -52,7 +52,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-          'https://res.cloudinary.com/reshelf/image/upload/v1619870944/ogp_rzf3q1.png',
+          'https://res.cloudinary.com/dgq5m1giu/image/upload/v1634295536/2021/%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A_2_vybyga.png',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
