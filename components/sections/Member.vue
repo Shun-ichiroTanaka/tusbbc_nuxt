@@ -1,6 +1,6 @@
 <template>
   <section id="member" class="w-full flex flex-col items-center px-4 lg:px-0">
-    <h2 class="lg:mt-16 mb-4">MEMBERS</h2>
+    <h2 class="w-full lg:mt-16 mb-4">MEMBERS</h2>
 
     <div class="section-body">
       <table class="styled-table">
@@ -70,12 +70,13 @@ section {
   }
 }
 h2 {
-  @apply text-3xl text-center inline-block;
-  color: var(--color);
-  // border-bottom: 5px solid var(--primary);
-
+  @apply text-3xl font-bold text-center;
+  background: var(--primary);
+  color: var(--fff);
+  padding: 2rem 0;
   @screen lg {
-    @apply text-5xl mb-4;
+    @apply text-5xl;
+    padding: 5rem 0;
   }
 }
 
@@ -86,9 +87,9 @@ h2 {
   border: 1px solid #dddddd;
   thead tr {
     @apply w-full;
-    background-color: var(--primary);
+    background-color: var(--ddd);
     // color: var(--86868b);
-    color: #ffffff;
+    color: var(--color);
     text-align: left;
   }
   th,

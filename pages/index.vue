@@ -10,6 +10,7 @@
           <!-- <What/> -->
           <!-- <Howto/> -->
           <Member />
+          <Schedule />
           <!-- <Register/> -->
         </div>
       </main>
@@ -26,6 +27,7 @@ import Footer from '~/components/layouts/Footer'
 // sections
 import Hero from '~/components/sections/Hero'
 import Member from '~/components/sections/Member'
+import Schedule from '~/components/sections/Schedule'
 
 export default {
   components: {
@@ -33,6 +35,7 @@ export default {
     Footer,
     Hero,
     Member,
+    Schedule,
   },
 }
 </script>

@@ -28,7 +28,7 @@
               MEMBERS
             </a>
             <a v-scroll-to="{ el: '#qa' }" class="mr-8" href="#qa">Q＆A</a>
-            <a v-scroll-to="{ el: '#message' }" class="mr-8" href="#message">
+            <a v-scroll-to="{ el: '#schedule' }" class="mr-8" href="#schedule">
               SCHEDULE
             </a>
             <a

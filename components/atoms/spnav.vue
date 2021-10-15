@@ -20,13 +20,11 @@
           <li class="link">
             <a v-scroll-to="{ el: '#member' }" href="#member">MEMBERS</a>
           </li>
-          <li class="link">
+          <!-- <li class="link">
             <a v-scroll-to="{ el: '#qa' }" href="#qa">Q＆A</a>
-          </li>
+          </li> -->
           <li class="link">
-            <a v-scroll-to="{ el: '#message' }" href="#message">
-              創業者のメッセージ
-            </a>
+            <a v-scroll-to="{ el: '#schedule' }" href="#schedule">SCHEDULE</a>
           </li>
           <li class="register">
             <a
