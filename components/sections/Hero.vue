@@ -25,16 +25,7 @@
       </div>
 
       <div
-        class="
-          relative
-          w-full
-          lg:w-2/3
-          flex
-          items-center
-          justify-center
-          pl-4
-          lg:pl-0
-        "
+        class="relative w-full lg:w-2/3 flex items-center justify-center"
         data-aos="fade-down"
       >
         <carousel
