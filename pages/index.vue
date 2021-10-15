@@ -7,11 +7,8 @@
         <Hero />
 
         <div class="main-content">
-          <!-- <What/> -->
-          <!-- <Howto/> -->
           <Member />
           <Schedule />
-          <!-- <Register/> -->
         </div>
       </main>
 

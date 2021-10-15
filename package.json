@@ -17,22 +17,22 @@
     "@nuxtjs/tailwindcss": "^4.1.2",
     "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
+    "core-js": "^3.8.3",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
-    "postcss": "^8.3.0",
-    "prettier": "^2.3.0",
-    "core-js": "^3.8.3",
     "fibers": "^5.0.0",
     "nuxt": "^2.15.8",
+    "postcss": "^8.3.0",
+    "prettier": "^2.3.0",
     "ress": "^3.0.0",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
+    "vue-carousel": "^0.18.0",
     "vue-feather-icons": "^5.1.0",
     "vue-scrollto": "^2.20.0"
-  },
-  "devDependencies": {}
+  }
 }

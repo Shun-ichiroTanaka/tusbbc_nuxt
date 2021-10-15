@@ -61,7 +61,10 @@ export default {
 
   css: ['ress', { src: '@/assets/sass/app.scss', lang: 'scss' }],
 
-  plugins: ['~/plugins/vue-scrollto'],
+  plugins: [
+    '~/plugins/vue-scrollto',
+    { src: '~/plugins/vue-carousel', ssr: false },
+  ],
 
   components: true,
 

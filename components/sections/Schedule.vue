@@ -1,5 +1,5 @@
 <template>
-  <section id="schedule" class="w-full">
+  <section id="schedule" class="w-full hidden lg:block">
     <h2 class="w-full mt-16 mb-4">SCHEDULE</h2>
 
     <div class="section-body">
@@ -35,8 +35,10 @@ section {
     width: 400px;
   }
   &-body {
-    @apply mx-auto font-semibold py-12;
+    @apply w-full mx-auto font-semibold py-12;
     color: var(--86868b);
+    max-width: 100%;
+    overflow: hidden;
     @screen lg {
       max-width: 800px;
     }
