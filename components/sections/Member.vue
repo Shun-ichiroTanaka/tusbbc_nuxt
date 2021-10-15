@@ -17,10 +17,10 @@
             <th style="width: 74px">背番号</th>
           </tr>
           <tr class="table lg:hidden">
-            <th class="w-1/5">位置/役職</th>
-            <th class="w-2/5">氏名</th>
-            <th>学年</th>
-            <th class="w-2/5">出身校</th>
+            <th style="width: 15% !important">位置/役職</th>
+            <th style="width: 40% !important">氏名</th>
+            <th style="width: 5% !important">学年</th>
+            <th style="width: 40% !important">出身校</th>
           </tr>
         </thead>
         <tbody>
@@ -36,10 +36,12 @@
             <td style="width: 74px">{{ member.number }}</td>
           </tr>
           <tr v-for="member in members" :key="member" class="table lg:hidden">
-            <td class="w-1/5">{{ member.position }}</td>
-            <td class="w-2/5">{{ member.name }}</td>
-            <td>{{ member.grade }}</td>
-            <td class="w-2/5">{{ member.from }}</td>
+            <td style="width: 15% !important">
+              {{ member.position }}
+            </td>
+            <td style="width: 40% !important">{{ member.name }}</td>
+            <td style="width: 5% !important">{{ member.grade }}</td>
+            <td style="width: 40% !important">{{ member.from }}</td>
           </tr>
         </tbody>
       </table>
