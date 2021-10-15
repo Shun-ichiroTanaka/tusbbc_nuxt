@@ -1,15 +1,7 @@
 <template>
   <div class="nav lg:hidden flex justify-between items-center p-4">
     <NuxtLink to="/" class="title-link">
-      <h1>
-        <img
-          src="https://res.cloudinary.com/reshelf/image/upload/v1619871156/Logo_pfuaao.svg"
-          alt="Reshelf Logo"
-          width="120"
-          height="40"
-          class="responsive"
-        />
-      </h1>
+      <h1 class="text-xl font-bold">東京理科大学野球部</h1>
     </NuxtLink>
     <input id="drawerCheckbox" class="nav__checkbox" type="checkbox" />
 
@@ -26,9 +18,7 @@
       <div class="w-full flex flex-col mx-auto">
         <ul class="flex flex-col justify-center lg:items-center p-8">
           <li class="link">
-            <a v-scroll-to="{ el: '#mission' }" href="#mission">
-              サービスの仕組み
-            </a>
+            <a v-scroll-to="{ el: '#member' }" href="#member"> MEMBERS </a>
           </li>
           <li class="link">
             <a v-scroll-to="{ el: '#qa' }" href="#qa">Q＆A</a>
@@ -40,11 +30,11 @@
           </li>
           <li class="register">
             <a
-              href="https://forms.gle/vG8GgqDSUxjm5Pfy7"
+              href="https://docs.google.com/forms/d/1FGurtbRLUHK4YMXOrRxOMiMDz8iLNsqBu1s-4vxiG9E/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              事前登録
+              CONTACT
             </a>
           </li>
         </ul>
