@@ -99,7 +99,7 @@ export default {
   @apply relative w-full;
   background: var(--bg);
   &-body {
-    @apply px-8 py-12;
+    @apply px-4 pt-4 pb-8;
     @apply flex justify-between mx-auto;
     max-height: calc(100vh - 98px - 60px);
     @screen lg {
@@ -114,7 +114,7 @@ export default {
       @apply text-7xl;
     }
     @media screen and (max-width: 370px) {
-      @apply text-3xl;
+      @apply text-5xl;
     }
     &-sub {
       @apply font-semibold text-base;
