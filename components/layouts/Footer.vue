@@ -14,7 +14,7 @@
         <p class="text-sm mb-2 cursor-default">
           ©
           <span ref="year"></span>
-          - Reshelf
+          - 東京理科大学硬式野球部
         </p>
       </div>
     </div>
