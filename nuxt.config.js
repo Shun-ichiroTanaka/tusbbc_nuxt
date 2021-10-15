@@ -66,7 +66,7 @@ export default {
   components: true,
 
   loading: {
-    color: '#3173F7',
+    color: '#16afaf',
     height: '5px',
   },
 
