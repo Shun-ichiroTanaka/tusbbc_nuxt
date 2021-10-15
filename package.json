@@ -34,5 +34,8 @@
     "vue-carousel": "^0.18.0",
     "vue-feather-icons": "^5.1.0",
     "vue-scrollto": "^2.20.0"
+  },
+  "devDependencies": {
+    "aos": "^3.0.0-beta.6"
   }
 }

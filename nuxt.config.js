@@ -64,6 +64,7 @@ export default {
   plugins: [
     '~/plugins/vue-scrollto',
     { src: '~/plugins/vue-carousel', ssr: false },
+    { src: '~/plugins/aos', ssr: false },
   ],
 
   components: true,

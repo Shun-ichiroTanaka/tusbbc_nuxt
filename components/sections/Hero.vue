@@ -15,8 +15,8 @@
       >
         <div class="hero-left lg:pr-16">
           <div class="">
-            <p class="hero-title text-left">WELCOME.</p>
-            <p class="hero-title-sub mt-2 md:mt-0">
+            <p class="hero-title text-left" data-aos="fade-up">WELCOME.</p>
+            <p class="hero-title-sub mt-2 md:mt-0" data-aos="fade-down">
               私たちは、東京理科大学神楽坂硬式野球部です。
               新東京大学野球３部リーグに所属する野球チームです。
             </p>
@@ -35,6 +35,7 @@
           pl-4
           lg:pl-0
         "
+        data-aos="fade-down"
       >
         <carousel
           :per-page="1"

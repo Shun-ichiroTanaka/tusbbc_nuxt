@@ -1,8 +1,8 @@
 <template>
   <section id="schedule" class="w-full hidden lg:block">
-    <h2 class="w-full mt-16 mb-4">SCHEDULE</h2>
+    <h2 class="w-full mt-16 mb-4" data-aos="fade-down">SCHEDULE</h2>
 
-    <div class="section-body">
+    <div class="section-body" data-aos="fade-down">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E6%9D%B1%E4%BA%AC%E7%90%86%E7%A7%91%E5%A4%A7%E5%AD%A6%E9%87%8E%E7%90%83%E9%83%A8%20-%20%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&showPrint=0&showNav=0&showDate=0&showTabs=0&showCalendars=0&src=dHVzLmJiYy5tYW5hZ2VyQGdtYWlsLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"
         style="border-width: 0"

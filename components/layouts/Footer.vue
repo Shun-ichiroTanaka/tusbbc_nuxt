@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32">
+  <div class="mt-32" data-aos="fade-down">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1950.1139095626734!2d139.91201505401003!3d35.92186342847694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1634277173791!5m2!1sja!2sjp"
       width="100%"
