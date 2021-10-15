@@ -29,7 +29,11 @@ export default {
         content:
           '東京理科大学野球部,理科大野球部,理科大,大学野球,東京都,神楽坂,千葉県,野田,東京理科大学,野球部,理科大野球,新東京大学野球',
       },
-      { hid: 'og:site_name', property: 'og:site_name', content: '東京理科大学野球部' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: '東京理科大学野球部',
+      },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'http://www.tus-bbc.com/' },
       {
@@ -61,11 +65,6 @@ export default {
 
   components: true,
 
-  styleResources: {
-    scss: [
-      '~/assets/sass/foundation/_variables.scss',
-    ],
-  },
   loading: {
     color: '#3173F7',
     height: '5px',

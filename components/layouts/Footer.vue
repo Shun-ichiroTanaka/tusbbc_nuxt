@@ -11,13 +11,23 @@
       <div
         class="footer-bottom-content flex flex-col justify-center items-center"
       >
-        <p class="text-sm mb-2 cursor-default">© 2021 - Reshelf</p>
+        <p class="text-sm mb-2 cursor-default">
+          ©
+          <span ref="year"></span>
+          - Reshelf
+        </p>
       </div>
     </div>
   </footer>
 </template>
 <script>
-export default {}
+export default {
+  mounted() {
+    let today = new Date()
+    let year = today.getFullYear()
+    this.$refs.year.innerHTML = year
+  },
+}
 </script>
 <style lang="scss" scoped>
 .footer {
