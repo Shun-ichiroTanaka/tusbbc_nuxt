@@ -71,6 +71,7 @@ section {
   &-body {
     @apply w-full flex justify-center mx-auto lg:py-4 container;
     // color: var(--86868b);
+    max-width: 980px;
   }
 }
 h2 {
