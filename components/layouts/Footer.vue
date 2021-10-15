@@ -15,7 +15,7 @@
             href="https://www.instagram.com/tus_kagura_baseball/"
             target="_blank"
             rel="noreferrer noopener"
-            class="mr-4"
+            class="lg:mr-4 mb-2 lg:mb-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@
             href="https://twitter.com/TUSbbc"
             target="_blank"
             rel="noreferrer noopener"
-            class="mr-4"
+            class="lg:mr-4 mb-2 lg:mb-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
