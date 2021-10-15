@@ -16,11 +16,11 @@
             <th style="width: 175px">出身校</th>
             <th style="width: 74px">背番号</th>
           </tr>
-          <tr class="table lg:hidden">
-            <th style="width: 15% !important">位置/役職</th>
-            <th style="width: 40% !important">氏名</th>
-            <th style="width: 5% !important">学年</th>
-            <th style="width: 40% !important">出身校</th>
+          <tr class="table lg:hidden w-full">
+            <th class="position">位置/役職</th>
+            <th class="name">氏名</th>
+            <th class="grade">学年</th>
+            <th class="from">出身校</th>
           </tr>
         </thead>
         <tbody>
@@ -35,13 +35,15 @@
             <td style="width: 175px">{{ member.from }}</td>
             <td style="width: 74px">{{ member.number }}</td>
           </tr>
-          <tr v-for="member in members" :key="member" class="table lg:hidden">
-            <td style="width: 15% !important">
-              {{ member.position }}
-            </td>
-            <td style="width: 40% !important">{{ member.name }}</td>
-            <td style="width: 5% !important">{{ member.grade }}</td>
-            <td style="width: 40% !important">{{ member.from }}</td>
+          <tr
+            v-for="member in members"
+            :key="member"
+            class="table lg:hidden w-full"
+          >
+            <td class="position">{{ member.position }}</td>
+            <td class="name">{{ member.name }}</td>
+            <td class="grade">{{ member.grade }}</td>
+            <td class="from">{{ member.from }}</td>
           </tr>
         </tbody>
       </table>
@@ -83,16 +85,18 @@ h2 {
 }
 
 .styled-table {
-  @apply rounded px-2 lg:px-0;
-  font-size: 0.9rem;
-  border-collapse: collapse;
+  @apply rounded px-2 lg:px-0 w-full;
   border: 1px solid #dddddd;
+  font-size: 0.9rem;
   thead tr {
     @apply w-full;
     background-color: var(--ddd);
     // color: var(--86868b);
     color: var(--color);
     text-align: left;
+    th {
+      @apply w-1/4 lg:w-auto;
+    }
   }
   th,
   td {
@@ -110,6 +114,48 @@ h2 {
       font-weight: bold;
       color: var(--primary);
     }
+  }
+}
+
+.position {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 100px !important;
+  }
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    width: 80px !important;
+  }
+  @media screen and (max-width: 360px) {
+    width: 60px !important;
+  }
+}
+.name {
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+    width: 200px !important;
+  }
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    width: 140px !important;
+  }
+  @media screen and (max-width: 360px) {
+    width: 120px !important;
+  }
+}
+.grade {
+  @media screen and (max-width: 1024px) {
+    width: 50px !important;
+  }
+  @media screen and (max-width: 360px) {
+    width: 30px !important;
+  }
+}
+.from {
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+    width: 200px !important;
+  }
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    width: 140px !important;
+  }
+  @media screen and (max-width: 360px) {
+    width: 120px !important;
   }
 }
 </style>
