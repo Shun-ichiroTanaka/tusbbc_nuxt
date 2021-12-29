@@ -9,6 +9,7 @@
         <div class="main-content">
           <Member />
           <Schedule />
+          <Gallery />
         </div>
       </main>
 
@@ -24,6 +25,7 @@ import Footer from '~/components/layouts/Footer'
 // sections
 import Hero from '~/components/sections/Hero'
 import Member from '~/components/sections/Member'
+import Gallery from '~/components/sections/Gallery'
 import Schedule from '~/components/sections/Schedule'
 
 export default {
@@ -32,6 +34,7 @@ export default {
     Footer,
     Hero,
     Member,
+    Gallery,
     Schedule,
   },
 }

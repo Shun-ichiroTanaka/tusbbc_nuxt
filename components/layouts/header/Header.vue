@@ -1,7 +1,7 @@
 <template>
   <nav class="nav lg:h-24 shadow-reverse">
     <div
-      class="hidden lg:flex relative mx-auto flex items-center py-3 h-full container px-4 md:px-0"
+      class="hidden lg:flex relative mx-auto flex items-center py-3 h-full container px-4"
     >
       <div class="flex w-full items-center justify-between">
         <div class="nav-left mr-auto">
@@ -17,6 +17,9 @@
             </a>
             <a v-scroll-to="{ el: '#schedule' }" class="mr-8" href="#schedule">
               SCHEDULE
+            </a>
+            <a v-scroll-to="{ el: '#gallery' }" class="mr-8" href="#gallery">
+              GALLERY
             </a>
             <a
               class="register"

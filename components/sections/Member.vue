@@ -24,7 +24,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="member in members" :key="member" class="hidden lg:table">
+          <tr
+            v-for="(member, index) in members"
+            :key="index"
+            class="hidden lg:table"
+          >
             <td style="width: 116px">{{ member.position }}</td>
             <td style="width: 116px">{{ member.name }}</td>
             <td style="width: 261px">{{ member.faculty }}</td>
@@ -36,8 +40,8 @@
             <td style="width: 74px">{{ member.number }}</td>
           </tr>
           <tr
-            v-for="member in members"
-            :key="member"
+            v-for="(member, index) in members"
+            :key="index"
             class="table lg:hidden w-full"
           >
             <td class="position">{{ member.position }}</td>
@@ -86,7 +90,7 @@ h2 {
 }
 
 .styled-table {
-  @apply rounded px-2 lg:px-0 w-full;
+  @apply rounded px-2 lg:px-0 w-full mb-8 lg:mb-0;
   border: 1px solid #dddddd;
   font-size: 0.9rem;
   thead tr {
