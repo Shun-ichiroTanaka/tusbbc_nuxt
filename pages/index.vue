@@ -37,6 +37,24 @@ export default {
     Gallery,
     Schedule,
   },
+  head: {
+    title: '東京理科大学硬式野球部 | Tokyo University Of Science Baseball Club',
+
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          '東京理科大学野球部のオフィシャルサイトです。東京理科大学野球部の選手紹介、最新試合結果、試合詳細、戦績、個人成績、野球部のニュースやトピックス、お問い合わせ先など、東京理科大学野球部に関する情報をご覧頂けます。',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          '東京理科大学野球部,理科大野球部,理科大,大学野球,東京都,神楽坂,千葉県,野田,東京理科大学,野球部,理科大野球,新東京大学野球',
+      },
+    ],
+  },
 }
 </script>
 <style lang="scss" scoped>

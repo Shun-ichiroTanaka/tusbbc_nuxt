@@ -2,7 +2,6 @@ export default {
   pageTransition: 'page',
 
   target: 'static',
-  ssr: true,
 
   head: {
     htmlAttrs: {
