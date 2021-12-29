@@ -1,5 +1,3 @@
-import Fiber from 'fibers'
-import Sass from 'sass'
 export default {
   pageTransition: 'page',
 
@@ -91,16 +89,6 @@ export default {
     hardSource: true,
     standalone: true,
     // analyze: true,
-
-    // Sass変換
-    loaders: {
-      scss: {
-        implementation: Sass,
-        sassOptions: {
-          fiber: Fiber,
-        },
-      },
-    },
 
     // 保存時にESlintの実行
     extend(config, ctx) {
