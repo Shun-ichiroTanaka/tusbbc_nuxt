@@ -2,6 +2,8 @@ up:
 	npm run dev
 deploy:
 	npm run build && npm run generate && firebase deploy
+login:
+	firebase logout && firebase login
 reset:
 	rm -rf node_modules
 	rm package-lock.json
