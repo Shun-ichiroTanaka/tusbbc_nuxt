@@ -1,18 +1,7 @@
 <template>
   <nav class="nav lg:h-24 shadow-reverse">
     <div
-      class="
-        hidden
-        lg:flex
-        relative
-        mx-auto
-        flex
-        items-center
-        py-3
-        h-full
-        container
-        px-4
-      "
+      class="hidden lg:flex relative mx-auto flex items-center py-3 h-full container px-4"
     >
       <div class="flex w-full items-center justify-between">
         <div class="nav-left mr-auto">

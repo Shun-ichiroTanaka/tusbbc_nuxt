@@ -61,12 +61,7 @@
           </a>
         </div>
         <div
-          class="
-            footer-bottom-content
-            flex flex-col
-            justify-center
-            items-center
-          "
+          class="footer-bottom-content flex flex-col justify-center items-center"
         >
           <p class="text-sm mb-2 cursor-default">
             ©

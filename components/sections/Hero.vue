@@ -2,16 +2,7 @@
   <div class="hero">
     <div class="hero-body flex-col md:flex-row">
       <div
-        class="
-          flex
-          lg:w-1/3
-          flex-col
-          items-center
-          md:items-start
-          justify-center
-          mb-8
-          lg:mb-0
-        "
+        class="flex lg:w-1/3 flex-col items-center md:items-start justify-center mb-8 lg:mb-0"
       >
         <div class="hero-left lg:pr-16">
           <div class="">
