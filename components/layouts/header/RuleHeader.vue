@@ -32,7 +32,7 @@
 
 <script>
 // import { ShoppingCartIcon,BellIcon,SearchIcon,UserIcon, MailIcon, LogOutIcon,HelpCircleIcon } from 'vue-feather-icons'
-import RuleSpNav from '~/components/atoms/RuleSpNav'
+import RuleSpNav from '@/components/atoms/RuleSpNav'
 
 export default {
   components: {

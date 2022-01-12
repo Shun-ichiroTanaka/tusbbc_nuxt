@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import ScrollTop from '~/components/atoms/ScrollTop'
+import ScrollTop from '@/components/atoms/ScrollTop'
 export default {
   components: {
     ScrollTop,

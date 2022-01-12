@@ -19,14 +19,15 @@
 </template>
 
 <script>
+import meta from '@/util/meta.js'
 // layout
-import Header from '~/components/layouts/header/Header'
-import Footer from '~/components/layouts/Footer'
+import Header from '@/components/layouts/header/Header'
+import Footer from '@/components/layouts/Footer'
 // sections
-import Hero from '~/components/sections/Hero'
-import Member from '~/components/sections/Member'
-import Gallery from '~/components/sections/Gallery'
-import Schedule from '~/components/sections/Schedule'
+import Hero from '@/components/sections/Hero'
+import Member from '@/components/sections/Member'
+import Gallery from '@/components/sections/Gallery'
+import Schedule from '@/components/sections/Schedule'
 
 export default {
   components: {
@@ -37,23 +38,8 @@ export default {
     Gallery,
     Schedule,
   },
-  head: {
-    title: '東京理科大学硬式野球部 | Tokyo University Of Science Baseball Club',
-
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          '東京理科大学野球部のオフィシャルサイトです。東京理科大学野球部の選手紹介、最新試合結果、試合詳細、戦績、個人成績、野球部のニュースやトピックス、お問い合わせ先など、東京理科大学野球部に関する情報をご覧頂けます。',
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content:
-          '東京理科大学野球部,理科大野球部,理科大,大学野球,東京都,神楽坂,千葉県,野田,東京理科大学,野球部,理科大野球,新東京大学野球',
-      },
-    ],
+  head() {
+    return meta
   },
 }
 </script>

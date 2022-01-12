@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import Spnav from '~/components/atoms/spnav'
+import Spnav from '@/components/atoms/spnav'
 
 export default {
   components: {
