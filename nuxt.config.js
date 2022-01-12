@@ -24,8 +24,10 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          '東京理科大学野球部,理科大野球部,理科大,大学野球,東京都,神楽坂,千葉県,野田,東京理科大学,野球部,理科大野球,新東京大学野球',
+          '東京理科大学野球部,理科大野球部,理科大,大学野球,東京都,神楽坂,千葉県,野田,東京理科大学,野球部,理科大野球,新東京大学野球,野球,baseball,Baseball,大学,試合,match,tokyo,Tokyo',
       },
+
+      // OGP
       {
         hid: 'og:site_name',
         property: 'og:site_name',
@@ -53,7 +55,69 @@ export default {
       },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens_iphone5_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_iphone6_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)',
+        href: 'static/splashscreens/splashscreens_iphoneplus_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)',
+        href: 'static/splashscreens/splashscreens_iphonex_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_iphonexr_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)',
+        href: 'static/splashscreens/splashscreens_iphonexsmax_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_ipad_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_ipadpro1_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_ipadpro3_splash.png',
+      },
+      {
+        rel: 'apple-touch-startup-image',
+        media:
+          '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)',
+        href: 'static/splashscreens/splashscreens_ipadpro2_splash.png',
+      },
+    ],
   },
 
   css: ['ress', { src: '@/assets/sass/app.scss', lang: 'scss' }],
@@ -71,11 +135,12 @@ export default {
     height: '5px',
   },
 
-  modules: [],
+  modules: ['nuxt-lazy-load'],
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
   ],
 
   styleResources: {
@@ -105,5 +170,61 @@ export default {
 
   generate: {
     dir: 'public',
+  },
+
+  pwa: {
+    meta: {
+      mobileApp: true,
+      mobileAppIOS: true,
+      appleStatusBarStyle: 'black',
+      appleMobileWebAppTitle: '東京理科大学野球部',
+    },
+    manifest: {
+      lang: 'ja',
+      name: '東京理科大学野球部',
+      short_name: '東京理科大学野球部',
+      description:
+        '東京理科大学野球部のオフィシャルサイトです。東京理科大学野球部の選手紹介、最新試合結果、試合詳細、戦績、個人成績、野球部のニュースやトピックス、お問い合わせ先など、東京理科大学野球部に関する情報をご覧頂けます。',
+      display: 'standalone',
+      theme_color: '#000',
+      background_color: '#fff',
+      orientation: 'portrait',
+      scope: '/',
+      start_url: '/',
+      icons: [
+        {
+          src: 'static/icon_pwa.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
+    },
+    icon: {
+      source: 'static/icon_pwa.png',
+      fileName: 'icon_pwa.png',
+    },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: '^https://polyfill.io/.*',
+          handler: 'cacheFirst',
+        },
+        {
+          urlPattern: `https://tus-bbc.com/.*`,
+          handler: 'staleWhileRevalidate',
+          strategyOptions: {
+            cacheName: 'site-cache',
+          },
+          strategyPlugins: [
+            {
+              use: 'Expiration',
+              config: {
+                maxAgeSeconds: 24 * 60 * 60 * 30,
+              },
+            },
+          ],
+        },
+      ],
+    },
   },
 }

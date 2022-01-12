@@ -17,36 +17,41 @@
           >
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%84%AA%E4%BD%9C%E3%81%95%E3%82%93%E5%90%91%E5%B3%B6%E3%81%95%E3%82%93_l6gm4i.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%84%AA%E4%BD%9C%E3%81%95%E3%82%93%E5%90%91%E5%B3%B6%E3%81%95%E3%82%93_l6gm4i.jpg"
                 alt="gallery-1"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E9%9B%86%E5%90%88%E5%86%99%E7%9C%9F_n0x7h2.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E9%9B%86%E5%90%88%E5%86%99%E7%9C%9F_n0x7h2.jpg"
                 alt="gallery-2"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E6%88%A6%E7%AC%AC1%E8%A9%A6%E5%90%88_ird7cx.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E6%88%A6%E7%AC%AC1%E8%A9%A6%E5%90%88_ird7cx.jpg"
                 alt="gallery-3"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E7%9F%B3%E5%B7%9D_ipipxl.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E7%9F%B3%E5%B7%9D_ipipxl.jpg"
                 alt="gallery-4"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E6%B1%A0%E7%94%B0_ikp1ja.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E6%B1%A0%E7%94%B0_ikp1ja.jpg"
                 alt="gallery-5"
               />
             </slide>
@@ -62,36 +67,41 @@
           >
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%84%AA%E4%BD%9C%E3%81%95%E3%82%93%E5%90%91%E5%B3%B6%E3%81%95%E3%82%93_l6gm4i.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%84%AA%E4%BD%9C%E3%81%95%E3%82%93%E5%90%91%E5%B3%B6%E3%81%95%E3%82%93_l6gm4i.jpg"
                 alt="gallery-1"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E9%9B%86%E5%90%88%E5%86%99%E7%9C%9F_n0x7h2.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E9%9B%86%E5%90%88%E5%86%99%E7%9C%9F_n0x7h2.jpg"
                 alt="gallery-2"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E6%88%A6%E7%AC%AC1%E8%A9%A6%E5%90%88_ird7cx.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E6%88%A6%E7%AC%AC1%E8%A9%A6%E5%90%88_ird7cx.jpg"
                 alt="gallery-3"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E7%9F%B3%E5%B7%9D_ipipxl.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E7%9F%B3%E5%B7%9D_ipipxl.jpg"
                 alt="gallery-4"
               />
             </slide>
             <slide>
               <img
+                v-lazy-load
                 class="img"
-                src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E6%B1%A0%E7%94%B0_ikp1ja.jpg"
+                data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641962965/2022/bbc-%E6%B1%A0%E7%94%B0_ikp1ja.jpg"
                 alt="gallery-5"
               />
             </slide>
