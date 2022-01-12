@@ -186,7 +186,7 @@ export default {
       description:
         '東京理科大学野球部のオフィシャルサイトです。東京理科大学野球部の選手紹介、最新試合結果、試合詳細、戦績、個人成績、野球部のニュースやトピックス、お問い合わせ先など、東京理科大学野球部に関する情報をご覧頂けます。',
       display: 'standalone',
-      theme_color: '#000',
+      theme_color: '#fff',
       background_color: '#fff',
       orientation: 'portrait',
       scope: '/',
