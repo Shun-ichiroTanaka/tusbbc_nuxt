@@ -103,3 +103,13 @@ table {
   border-collapse: collapse !important;
   table-layout: fixed !important;
 }
+
+.img {
+  // border-radius: 10px !important;
+  @apply p-6;
+  @screen lg {
+    @apply object-cover p-0;
+    width: 450px !important;
+    height: 340px !important;
+  }
+}
