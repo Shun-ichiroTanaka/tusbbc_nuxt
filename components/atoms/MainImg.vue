@@ -5,7 +5,7 @@
   >
     <img
       v-lazy-load
-      data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1642317807/2022/main_vub9xd.svg"
+      data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1642318221/2022/main_lpdhtu.svg"
       alt="main-img"
     />
   </div>
