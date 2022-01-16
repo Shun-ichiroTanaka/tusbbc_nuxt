@@ -3,7 +3,7 @@
     <img
       v-lazy-load
       data-aos="fade-down"
-      data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1641986753/2022/%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A_29_wrmrgf.svg"
+      data-src="https://res.cloudinary.com/dgq5m1giu/image/upload/v1642315292/2022/%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A_29_rb9kzi.png"
       alt="main-img"
     />
   </div>
