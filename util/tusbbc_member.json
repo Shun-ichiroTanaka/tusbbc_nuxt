@@ -69,7 +69,7 @@
 		"position": "投手",
 		"name": "吉岡憲希",
 		"faculty": "理学部第二部物理学科",
-		"grade": 2,
+		"grade": 1,
 		"arm": "右左",
 		"height": 169,
 		"weight": 59,
@@ -159,7 +159,7 @@
 		"faculty": "経営学部経営学科",
 		"grade": 4,
 		"arm": "右右",
-		"height": 170,
+		"height": 169,
 		"weight": 60,
 		"from": "桐蔭学園中等教育学校",
 		"number": 18
@@ -177,7 +177,7 @@
 	},
 	{
 		"position": "外野手",
-		"name": "楳 坂直",
+		"name": "楳坂 直",
 		"faculty": "理学部第一部化学科",
 		"grade": 2,
 		"arm": "右右",
@@ -193,7 +193,7 @@
 		"grade": 2,
 		"arm": "右右",
 		"height": 175,
-		"weight": 64,
+		"weight": 73,
 		"from": "明法",
 		"number": 8
 	},
